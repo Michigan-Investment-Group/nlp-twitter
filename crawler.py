@@ -24,10 +24,6 @@ cred = credentials.Certificate(firebase_key_secret)
 
 sid = SentimentIntensityAnalyzer()
 
-# CONSUMER_KEY = twitter_keys[key_index]['consumer-key']
-# CONSUMER_SECRET = twitter_keys[key_index]['consumer-secret']
-# ACCESS_TOKEN = twitter_keys[key_index]['access-token']
-# ACCESS_TOKEN_SECRET = twitter_keys[key_index]['access-secret']
 API_KEY = keys['finance_key']
 FINANCE_URL = 'https://financialmodelingprep.com/api/v3/'
 
