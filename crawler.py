@@ -1,4 +1,5 @@
 # Script to scrape data off Twitter
+from typing import KeysView
 import urllib
 import firebase_admin
 import tweepy as tw
@@ -6,26 +7,20 @@ import json
 import helpers as helpers
 import time
 
-from requests import request
 from datetime import datetime
 from pathlib import Path
 from tqdm import tqdm
-from uuid import uuid4
 from firebase_admin import credentials, firestore
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from concurrent.futures import ThreadPoolExecutor
 
-credential_path = Path('firebase.json').resolve()
-key_path = Path('key.json').resolve()
-twitter_key_path = Path('twitter_keys.json').resolve()
-cred = credentials.Certificate(str(credential_path))
 
-with open(key_path) as f:
-    keys = json.load(f)
 
-# load json array of twitter keys
-with open(twitter_key_path) as f:
-    twitter_keys = json.load(f)
+twitter_keys = helpers.access_secret_version('TWITTER_KEYS')
+firebase_key_secret = helpers.access_secret_version('FIREBASE_KEY')
+keys = helpers.access_secret_version('API_KEYS')
+
+cred = credentials.Certificate(firebase_key_secret)
 
 sid = SentimentIntensityAnalyzer()
 
@@ -56,7 +51,7 @@ class TwitterCrawler():
     # Will return list of tweets relating to stock symbol
     def search_stock(self, ticker, keys):
         key_index = 0
-        error_status = true
+        error_status = True
         while (error_status):
             if (key_index >= len(keys)):
                 print("Error: No valid keys")
@@ -69,8 +64,8 @@ class TwitterCrawler():
             ACCESS_TOKEN_SECRET = twitter_keys[key_index]['access-secret']
 
             try: 
-                search_stock_helper(self, ticker, CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-                error_status = false
+                self.search_stock_helper(self, ticker, CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+                error_status = False
             
             except Exception as e:
                 ++key_index
