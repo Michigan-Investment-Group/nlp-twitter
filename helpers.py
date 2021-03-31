@@ -46,6 +46,3 @@ def upload(client, ticker, posts):
             batch.set(ref, post)
         batch.commit()
     return
-
-    
-    
