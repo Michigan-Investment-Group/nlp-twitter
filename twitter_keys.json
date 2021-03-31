@@ -1,0 +1,38 @@
+[
+    {
+        "consumer-key": "Tj0azCskBP8Uz3k7WqVcIbvti",
+        "consumer-secret": "R9AZBf059WfTlgeFx8L6tTJdF5mGqbdxWqfWTgrkfMvejJPQNP",
+        "access-token": "753289726501748736-B92NhS82NZd2ET59oTueYuf3o7gfo4b",
+        "access-secret": "HhRxSbH00bfOyItzjM5FVr9qoT8eHcIbljwdxTH6vKqMQ" 
+    },
+    {
+        "consumer-key": "1t8fx9npPy9qvjs6Y8VpDfdoq",
+        "consumer-secret": "GkmSFXJNWSIsujKraSObQckKUa68YDtF4tx2xj3W075cI1zuKy",
+        "access-token": "1368681635294625801-RYmkrwA1Cw50cbqy7FiIjLNKKTLxs3",
+        "access-secret": "WEWNagb1roQpbfLZF6RI4w0L6j33i1EuAyMSIMKBeW54X"
+    },
+    {
+        "consumer-key": "UCNVeBxTp5bhCTPAmCv08oBDa",
+        "consumer-secret": "qOM7yLZKeH285MjTGMMbDdvAUUQ9TRlvdZI2w0CeEckp1ekX7r",
+        "access-token": "1339674155264913413-hWx1kM2RIjMm4YwofGPcurm2XUYEjH",
+        "access-secret": "OREKmezDOtHpozJ9d07ueWGYqNf74LnOPM62KpE03Wo6F"
+    },
+    {
+        "consumer-key": "uFKRWXgIGTkdBEtM0uPlTsFi9",
+        "consumer-secret": "T6h3VDQdctVI1U4XPoNn54oEPmpnKfXSl4K7okqK27XzJWeBPJ",
+        "access-token": "717119760023085058-BIS2J3Unc9hdpgn80vaxQEIgsNoov2N",
+        "access-secret": "bpuwXsCpMNA2mQOJIGIJwBRo0Gdw98MQm9Z9HJ7XbL1en"
+    },
+    {
+        "consumer-key": "06KGyVsCoAwpmvMMF7TcE0AQQ",
+        "consumer-secret": "Ku38QL73H2c0QV42rorovfob2qGXi5CQ1CONE6NuBNPEKDZYst",
+        "access-token": "2676564837-5Vn4HWad0m00x3LTfR5lRAhGWYjzllFY1CQ7JHY",
+        "access-secret": "qnDw3C74ZHHi1yf9hP1VfZ14ENJiJMJGpchiP8youEqGo"
+    },
+    {
+        "consumer-key": "nSmnx6T9uMiSlEDJMiR8w9LHC",
+        "consumer-secret": "7CCrDZjDNw3TbuzsYLF5F99vitqClHBBrQvowFd3XSf3cCP2mC",
+        "access-token": "1376273641915174919-lhxlgvhncGzcCzlR6z3PUJZLgNLkPo",
+        "access-key": "1yxmB4AtZ6jCbELT5ERZg2avZbY282jZW3OpwM0euRCwr"
+    }
+]
